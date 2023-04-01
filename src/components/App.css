@@ -1,0 +1,92 @@
+/* button-container */
+#button-container {
+    position: relative;
+    left: 580px;
+    top: 50px;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    width: 350px;
+}
+
+/* all buttons inside button-container */
+#button-container > button {
+    font-size: 1.2rem;
+    padding: 5px 12px;
+    border: none;
+    border-radius: 5px;
+}
+
+#button-container > button:hover {
+    cursor: pointer;
+}
+
+#btn-left {
+    color: white;
+    background-color: rgb(85, 202, 95);
+}
+#btn-top {
+    color: white;
+    background-color: rgb(85, 202, 95);
+}
+#btn-right {
+    color: white;
+    background-color: rgb(85, 202, 95);
+}
+#btn-bottom {
+    color: white;
+    background-color: rgb(85, 202, 95);
+}
+
+/* container that contains the text to be hovered */
+#hover-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  background-color: rgb(93, 93, 212);
+  color: white;
+  width: 250px;
+  border-radius: 10px;
+  left: 640px;
+  top: 250px;
+}
+
+/* tooltip */
+.tooltip {
+    position: absolute;
+    display: none;
+    background-color: rgb(78, 77, 77);
+    color: white;
+    padding: 10px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+}
+
+#hover-container:hover + .tooltip {
+    display: block;
+    opacity: 90%;
+}
+
+/* tooltip - direction left */
+#tooltip-left {
+    top: 325px;
+    left: 500px;
+}
+
+/* tooltip - direction top */
+#tooltip-top {
+    top: 240px;
+    left: 707px;
+}
+
+/* tooltip - direction right */
+#tooltip-right {
+    top: 325px;
+    left: 910px;
+}
+
+/* tooltip - direction bottom */
+#tooltip-bottom {
+    top: 405px;
+    left: 707px;
+}
